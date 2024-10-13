@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres
+    container_name: curso_postgres
+    environment:
+      POSTGRES_DB: curso_docker
+      POSTGRES_USER: docker_usr
+      POSTGRES_PASSWORD: docker_pwd
+    ports:
+      - "5432:5432"
+    restart: always
+
+
